@@ -3,11 +3,6 @@
     padding: 60px;
 }
 
-.container > .row {
-    width: 1000px;
-    margin: 0 calc(50% - 500px);
-}
-
 .container > .row-short {
     display: flex;
     flex-direction: column;
@@ -15,6 +10,22 @@
     gap: 20px;
     width: 600px;
     margin: 0 calc(50% - 300px);
+}
+
+.container > .row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 60px 10%;
+    width: 1000px;
+    margin: 0 calc(50% - 500px);
+}
+
+.container .column {
+   width: 50%; 
+}
+.column.right-column {
+   /* margin-left: auto;  //sitas marginas pakeiciamas gap 10% auksciau*/
+   width: 40%; 
 }
 
 @media screen and ( max-width: 1100px ) {
@@ -35,6 +46,11 @@
         width: 400px;
         margin: 0 calc(50% - 200px);
     }
+
+    .container .column,
+    .column.right-column {
+        width: 100%; 
+     }
 }
 @media screen and ( max-width: 440px ) {
 
@@ -51,10 +67,3 @@
 }
 
 
-
-.bg-main {
-    background-color: #03a9f3;
-}
-.bg-secondary {
-    background-color: #ea1e63;
-}
