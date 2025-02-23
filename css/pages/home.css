@@ -21,3 +21,32 @@
     text-align: center;
 
 }
+
+footer.container {
+    padding-top: 0;
+}
+
+.row.socials {
+    display:flex;
+    gap: 0.5em;
+    padding: 0.5em 0;
+    font-size: 20px;
+    margin-bottom: 40px;
+    border-bottom: 3px solid pink;
+}
+
+.row.socials > a {
+    height: 2.5em;
+    width: 2.5em;
+    line-height: 2.5em;
+    text-align: center;
+    color: white;
+    text-decoration: none;
+    border-radius: 50%;
+    transition: all 0.3s;
+}
+.row.socials > a:hover {
+    background-color: white;
+    color: #03a9f3;
+
+}
