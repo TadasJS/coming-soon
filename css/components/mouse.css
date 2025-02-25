@@ -1,0 +1,36 @@
+.mouse {
+    font-size: 0.2rem;
+    width: 10em;
+    height: 15em;
+    border: 1.5em solid white;
+    border-radius: 5em;
+    position: relative;
+    margin: auto;
+}
+.mouse::after{
+    content: '';
+    display: block;
+    width: 1.2em;
+    height: 2em;
+    background-color: #fff;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    border-radius: 1em;
+    animation: scroll 2s infinite linear;
+}
+
+@keyframes scroll {
+    0% {
+        top: 2em;
+        background-color: #fff;
+    }
+    40% {
+        
+        background-color: #fff;
+    }
+    100% {
+        top: 8em;
+        background-color: #fff0;
+}   
+}
