@@ -6,10 +6,18 @@
 
 /* components */
 @import '../components/clock.css';
+@import '../components/form.css';
 @import '../components/mouse.css';
 @import '../components/progress-bar.css';
 
 /* CUSTOM STYLE BELOW THIS COMMENT LINE */
+.hero {
+    background-image: url('../../img/banner-11.jpg');
+    background-size: cover;
+    background-position: bottom center;
+    background-attachment: fixed;
+    min-height: 100vh;
+}
 
 .logo {
     width: 3rem;
@@ -19,6 +27,8 @@
     text-transform: uppercase;
     text-align: center;
 }
+
+
 .main-description {
     font-size: 1.3rem;
     text-align: center;
@@ -50,7 +60,7 @@ footer.container {
 }
 .row.socials > a:hover {
     background-color: white;
-    color: #03a9f3;
+    color: var(--main-color);
     transition: all 1s;
 
 }
@@ -98,5 +108,11 @@ footer > .row-short a {
     }
     .text-trio > p::after {     
         display: inline-block; 
+    }
+}
+
+@media screen and (max-width: 22rem) {
+    .main-title {
+        font-size: 3.5rem;
     }
 }

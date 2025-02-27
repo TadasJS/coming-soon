@@ -9,8 +9,7 @@
     justify-content: space-between;
 
 }
-.progress-bar > .top > .label {}
-.progress-bar > .top > .value {}
+
 .progress-bar > .bottom {
     height: 0.4rem;
     width: 100%;
@@ -23,7 +22,7 @@
 /* progress bar animation */
 
 .progress-bar .progress > .bar {
-    background-color: #03a9f3;
+    background-color: var(--main-color);
     width: 0%;
     height: 100% ;
     animation-name: loading;

@@ -14,8 +14,9 @@
     height: 2em;
     background-color: #fff;
     position: absolute;
-    top: 0;
+    top: 2em;
     left: 50%;
+    transform: translateX(-50%);
     border-radius: 1em;
     animation: scroll 2s infinite linear;
 }
